@@ -95,11 +95,6 @@ repositories:
     type: git
     url: https://github.com/MapIV/transport_drivers.git
     version: boost
-  # sensor_kit
-  sensor_kit/sample_sensor_kit_launch:
-    type: git
-    url: https://github.com/autowarefoundation/sample_sensor_kit_launch.git
-    version: main
   sensor_kit/external/awsim_sensor_kit_launch: # TODO: Integrate into sample_sensor_kit_launch
     type: git
     url: https://github.com/RobotecAI/awsim_sensor_kit_launch.git
@@ -108,17 +103,31 @@ repositories:
     type: git
     url: https://github.com/autowarefoundation/awsim_labs_sensor_kit_launch.git
     version: main
-  # vehicle
-  vehicle/sample_vehicle_launch:
-    type: git
-    url: https://github.com/autowarefoundation/sample_vehicle_launch.git
-    version: main
   vehicle/external/pacmod_interface:
     type: git
     url: https://github.com/tier4/pacmod_interface.git
     version: main
-  # param
-  param/autoware_individual_params:
+
+  #MACHE SENSOR SETUP
+  sensor_kit/mache_sensor_kit_launch:
     type: git
-    url: https://github.com/autowarefoundation/autoware_individual_params.git
+    url: https://github.com/ashishpratikpatil/mache_sensor_kit_launch.git
+    version: main
+
+  #MACHE VEHICLE LAUNCH
+  vehicle/mache_launch:
+    type: git
+    url: https://github.com/ashishpratikpatil/mache_launch.git
+    version: main
+
+  #MACHE INDIVIDUAL PARAMS LAUNCH
+  param/mache_individual_params:
+    type: git
+    url: https://github.com/ashishpratikpatil/mache_individual_params.git
+    version: main
+
+  #MACHE AUTOWARE LAUNCH
+  launcher/autoware_launch.mache:
+    type: git
+    url: https://github.com/ashishpratikpatil/autoware_launch.mache.git
     version: main
